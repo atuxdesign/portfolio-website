@@ -1,0 +1,156 @@
+/*
+Colors used:
+Primary Color (white): #ffffff;
+Secondary Color (Black): #2d2d2d;
+cream green: #d6ded8;
+*/
+
+/* other possible fonts I'd try to use: */
+
+/* .reenie-beanie-regular {
+    font-family: "Reenie Beanie", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+/* .mynerve-regular {
+    font-family: "Mynerve", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+/* .gloria-hallelujah-regular {
+    font-family: "Gloria Hallelujah", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+/* .schoolbell-regular {
+    font-family: "Schoolbell", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+.roboto-mono {
+  font-family: "Roboto Mono", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Roboto Mono", serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em; /* font size = 16px so 2.75 x 16px = 44px */
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+a {
+  color: #8cb0c6;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited {
+  /* visited link */
+  color: #9b736f;
+}
+
+a:hover,
+a:focus {
+  color: #1c1d1d;
+  text-decoration: underline;
+}
+
+a:active {
+  /* selected link */
+  color: #101010;
+}
+
+.emphasis {
+  font-style: italic;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #d6ded8;
+  color: #2d2d2d; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #737272; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:visited {
+  color: #2d2d2d;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  color: #737272; /* changes the background color of the button to darker shade */
+}
+
+.button.contact,
+.button.resume {
+  background-color: #eee1db;
+  color: #181717;
+  text-transform: uppercase;
+  border: 2px solid #2d2d2d;
+}
+
+.button.contact:visited,
+.button.resume:visited {
+  color: #2d2d2d;
+}
+
+.button.contact:hover,
+.button.contact:focus,
+.button.resume:hover,
+.button.resume:focus {
+  background-color: #e6e6e6;
+  color: #2d2d2d;
+}
+
+.button.contact,
+.button.resume:active {
+  background-color: #eee1db;
+  color: #737272;
+  border: 1px solid #737272;
+}
