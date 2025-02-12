@@ -1,12 +1,22 @@
 /*
-Colors used:
+COLORS USED
 Primary Color (white): #ffffff;
 Secondary Color (Black): #2d2d2d;
 cream green: #d6ded8;
 */
 
-/* other possible fonts I'd try to use: */
+/*------OTHER COLORS------
+background-color: #A3A083; olive green
+background-color: #91877A; mushroom brown
+background-color: #B8C2B0; sage green 
+background-color: #A8B7C7; dusty blue
+background-color: #93A7A1; muted teal
+background-color: #BDB7AF; greige 
+background-color: #C4B8A5; taupe
+background-color: #E8E2D9; beige
+*/
 
+/*-----OTHER FONTS-----
 /* .reenie-beanie-regular {
     font-family: "Reenie Beanie", serif;
     font-weight: 400;
@@ -37,6 +47,10 @@ cream green: #d6ded8;
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
   font-family: "Roboto Mono", serif;
@@ -46,9 +60,31 @@ body {
   color: #4a4a4a;
 }
 
-img {
+header {
+  background-color: #d6ded8;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
   width: 100%;
+  box-shadow: 0px 6px 10px 0px rgba(169, 170, 171, 0.5);
 }
+
+main {
+  padding-top: 133px;
+}
+
+/*
+---------------SIDENOTES---------------
+padding: 10px; /* Adds a 10px inner spacing to all sides 
+padding: 10px 5px; Adds 10px to top & bottom and 5px to left and right 
+padding: 10px 5px 15px 5px; Adds 10px top, 5px right, 15px bottom, 5px left 
+----------------------------------------------------------------
+OR YOU CAN SPECIFY THE SPACING FOR EVERY DIRECTION
+padding-top: 10px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-left: 5px;
+*/
 
 h1,
 h2,
@@ -77,6 +113,16 @@ h4 {
   font-weight: 400;
 }
 
+/* -----IMAGES----- */
+img {
+  width: 100%;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+/* -----A TAGS-----*/
 a {
   color: #8cb0c6;
   text-decoration: none; /* No underlining */
@@ -84,7 +130,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: #9b736f;
+  color: #8a8b8c;
 }
 
 a:hover,
@@ -102,10 +148,11 @@ a:active {
   font-style: italic;
 }
 
+/* ------BUTTONS------ */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #d6ded8;
-  color: #2d2d2d; /* needed to override the default link color */
+  color: #181717; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -114,7 +161,7 @@ a:active {
 }
 
 .button:visited {
-  color: #2d2d2d;
+  color: #8a8b8c;
 }
 
 .button:hover,
@@ -129,7 +176,8 @@ a:active {
 
 .button.contact,
 .button.resume {
-  background-color: #eee1db;
+  /* background-color: #eee1db; */
+  background-color: #e8e2d9;
   color: #181717;
   text-transform: uppercase;
   border: 2px solid #2d2d2d;
@@ -150,7 +198,94 @@ a:active {
 
 .button.contact,
 .button.resume:active {
-  background-color: #eee1db;
-  color: #737272;
-  border: 1px solid #737272;
+  background-color: #e8e2d9;
+  color: #101010;
+  border: 2px solid #2d2d2d;
+}
+
+/* -----LAYOUT STYLING----- */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+/* -----NAVIGATION----- */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #707772;
+}
+
+nav > ul > li > a:visited {
+  /* color: #8a8b8c; */
+  color: #b0a3c3;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #bdb7af;
+}
+
+nav > ul > li > a:active {
+  color: #101010;
+}
+
+#hero {
+  background-color: #eeecf1; /*light grayish purple*/
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#contact {
+  background-color: #f6f7f8;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* FOOTER SOCIALS */
+ul.socials {
+  list-style-type: none;
+  display: inline-flex;
+  margin-right: 65px;
+}
+
+/* -----ABOUT PAGE-------*/
+#about-me {
+  padding: 20px 0;
+}
+
+/* -----SOULACE PAGE-------*/
+#soulace-content {
+  padding: 20px 0;
+}
+
+#table-of-contents h2 {
+  text-align: center;
+}
+
+/* STILL NEED TO FIGURE OUT HOW I WANT TO STYLE AND DISPLAY THIS SECTION MORE..*/
+ul.contents-list {
+  list-style-type: none;
+  text-align: center;
 }
