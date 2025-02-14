@@ -40,39 +40,6 @@ background-color: #E8E2D9; beige
     font-weight: 400;
     font-style: normal;
   } */
-
-.roboto-mono {
-  font-family: "Roboto Mono", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #fff;
-  font-family: "Roboto Mono", serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
-}
-
-header {
-  background-color: #d6ded8;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  box-shadow: 0px 6px 10px 0px rgba(169, 170, 171, 0.5);
-}
-
-main {
-  padding-top: 133px;
-}
-
 /*
 ---------------SIDENOTES---------------
 padding: 10px; /* Adds a 10px inner spacing to all sides 
@@ -85,6 +52,39 @@ padding-right: 5px;
 padding-bottom: 15px;
 padding-left: 5px;
 */
+
+.roboto-mono {
+  font-family: "Roboto Mono", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #d6ded8;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 6px 10px 0px rgba(169, 170, 171, 0.5);
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: "Roboto Mono", serif;
+  font-size: 18px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+main {
+  padding-top: 99px;
+}
 
 h1,
 h2,
@@ -144,10 +144,6 @@ a:active {
   color: #101010;
 }
 
-.emphasis {
-  font-style: italic;
-}
-
 /* ------BUTTONS------ */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -176,7 +172,6 @@ a:active {
 
 .button.contact,
 .button.resume {
-  /* background-color: #eee1db; */
   background-color: #e8e2d9;
   color: #181717;
   text-transform: uppercase;
@@ -202,6 +197,58 @@ a:active {
   color: #101010;
   border: 2px solid #2d2d2d;
 }
+
+/*------------------------------------------------------------------------*/
+/* CSS ANIMATION */
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #cdcdcd;
+  }
+  50% {
+    fill: #d6ded8;
+  }
+  100% {
+    fill: #bbb2da;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/*------------------------------------------------------------------*/
 
 /* -----LAYOUT STYLING----- */
 .container {
@@ -244,7 +291,8 @@ nav > ul > li > a:active {
 }
 
 #hero {
-  background-color: #eeecf1; /*light grayish purple*/
+  background-color: #eeecf1;
+  text-align: center; /*light grayish purple*/
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -252,14 +300,73 @@ nav > ul > li > a:active {
 #hero h1 {
   text-align: center; /* Centers text */
 }
-#work .row {
+
+#hero span {
+  display: block;
+}
+
+#work .row:after {
+  content: "";
+  clear: both;
+  display: table;
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
 
+/* -----ABOUT PAGE-------*/
+#about {
+  padding: 20px 0;
+}
+
+#about .column {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-me-title {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.about-img {
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: #d3c5e8;
+  box-shadow: 0px 6px 10px 0px rgba(169, 170, 171, 0.5);
+}
+
+/* -----SOULACE PAGE-------*/
+#soulace-content {
+  padding: 20px 0;
+}
+
+#soulace {
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 6px 10px 0px rgba(169, 170, 171, 0.5);
+}
+
+#table-of-contents h2 {
+  text-align: center;
+}
+
 #contact {
   background-color: #f6f7f8;
-  padding: 10px 0;
+  padding: 16px 0;
+  text-align: center;
+}
+
+/* STILL NEED TO FIGURE OUT HOW I WANT TO STYLE AND DISPLAY THIS SECTION MORE..*/
+ul.contents-list {
+  list-style-type: none;
   text-align: center;
 }
 
@@ -270,22 +377,55 @@ ul.socials {
   margin-right: 65px;
 }
 
-/* -----ABOUT PAGE-------*/
-#about-me {
-  padding: 20px 0;
+footer {
+  position: relative;
+  clear: both;
 }
 
-/* -----SOULACE PAGE-------*/
-#soulace-content {
-  padding: 20px 0;
+/* only keep media queries at the end of other styling */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
 }
 
-#table-of-contents h2 {
-  text-align: center;
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-/* STILL NEED TO FIGURE OUT HOW I WANT TO STYLE AND DISPLAY THIS SECTION MORE..*/
-ul.contents-list {
-  list-style-type: none;
-  text-align: center;
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
