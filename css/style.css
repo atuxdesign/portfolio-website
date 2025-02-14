@@ -172,7 +172,7 @@ a:active {
 
 .button.contact,
 .button.resume {
-  background-color: #e8e2d9;
+  background-color: #c6d4da;
   color: #181717;
   text-transform: uppercase;
   border: 2px solid #2d2d2d;
@@ -193,7 +193,7 @@ a:active {
 
 .button.contact,
 .button.resume:active {
-  background-color: #e8e2d9;
+  background-color: #c6d4da;
   color: #101010;
   border: 2px solid #2d2d2d;
 }
@@ -253,6 +253,8 @@ a:active {
 /* -----LAYOUT STYLING----- */
 .container {
   padding: 0 15px;
+  max-width: 100%;
+  margin: auto;
 }
 
 .row {
@@ -278,7 +280,7 @@ nav > ul > li > a {
 
 nav > ul > li > a:visited {
   /* color: #8a8b8c; */
-  color: #b0a3c3;
+  color: #8a8b8c;
 }
 
 nav > ul > li > a:hover,
@@ -291,7 +293,7 @@ nav > ul > li > a:active {
 }
 
 #hero {
-  background-color: #eeecf1;
+  background-color: #f3e9e1;
   text-align: center; /*light grayish purple*/
   padding: 20px 0;
   display: inline-block;
@@ -314,30 +316,50 @@ nav > ul > li > a:active {
 }
 
 /* -----ABOUT PAGE-------*/
-#about {
-  padding: 20px 0;
+/* #about {
+  padding: 40px;
+} */
+
+#about h2 {
+  text-align: left;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#about h3 {
+  text-align: left;
+  padding-bottom: 70px;
 }
 
 #about .column {
-  flex: 1;
-  padding: 20px;
+  padding: 40px;
 }
 
 .about-me-title {
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 0;
-  margin-bottom: 0;
+  padding-top: 30px;
 }
 
 .about-img {
-  max-width: 600px;
+  max-width: 450px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-style: solid;
-  border-color: #d3c5e8;
+  border-radius: 20px;
+  /* border-style: solid; */
+  /* border-color: #8a8b8c; */
   box-shadow: 0px 6px 10px 0px rgba(169, 170, 171, 0.5);
+}
+
+.skills-container {
+  margin-bottom: 30px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.skills-container h2 {
+  margin-top: 35px;
+  margin-bottom: 0;
 }
 
 /* -----SOULACE PAGE-------*/
@@ -359,7 +381,7 @@ nav > ul > li > a:active {
 }
 
 #contact {
-  background-color: #f6f7f8;
+  background-color: #f3e9e1;
   padding: 16px 0;
   text-align: center;
 }
