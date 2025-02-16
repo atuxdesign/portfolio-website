@@ -253,8 +253,8 @@ a:active {
 /* -----LAYOUT STYLING----- */
 .container {
   padding: 0 15px;
-  max-width: 100%;
-  margin: auto;
+  /* max-width: 100%; */
+  /* margin: auto; */
 }
 
 .row {
@@ -368,12 +368,18 @@ nav > ul > li > a:active {
 }
 
 #soulace {
-  max-width: 992px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 100px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 6px 10px 0px rgba(169, 170, 171, 0.5);
+  margin-bottom: 0;
+  padding: 30px;
+  padding-top: 100px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0px 6px 10px 0px rgba(163, 165, 167, 0.5);
+}
+
+#soulace h4 {
+  text-align: center;
 }
 
 #table-of-contents h2 {
@@ -428,10 +434,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-  }
-
-  #about-page h3 {
-    margin-top: 0;
+    padding : 15px;
   }
 }
 
@@ -443,6 +446,14 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .col-md-5 {
+    width: 40%;
+  }
+
+  .col-md-7 {
+    width: 60%;
   }
 }
 
