@@ -11,11 +11,16 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    >
     <!-- favicon -->
     <link href="./img/favicon.ico" rel="shortcut icon">
     <meta name="author" content="AbegailTaitano">
-    <meta name="description" content="Abegail Taitano Portfolio, where empathy, creativity, and logic converge. Through design and code, I aim to create intuitive, human-centered experiences that go beyond aesthetics">
+    <meta
+      name="description"
+      content="Abegail Taitano Portfolio, where empathy, creativity, and logic converge. Through design and code, I aim to create intuitive, human-centered experiences that go beyond aesthetics">
     <title>Soulace Case Study</title>
   </head>
   <body>
@@ -25,8 +30,10 @@
         <!-- Clickable Logo Image -->
         <a href="index.html">
           <img
-            src="img/logo_profile_images/logo_test.svg" class="logo"
-            alt="clickable logo image">
+            src="img/logo_profile_images/logo_test.svg"
+            class="logo"
+            alt="clickable logo image"
+          >
         </a>
         <!-- For the Navigation -->
         <nav>
@@ -46,736 +53,810 @@
           <!--div class="project-header"-->
           <h1>Soulace</h1>
           <div class="row">
-          <h4>
-            Role: UX Designer | Tools used: Figma | Timeline: June‘24
-            -January’25
-          </h4>
-        </div>
-        <div>
-          <!-- div class="project-image"-->
-          <picture>
-            <source
-              srcset="
-                ./img/soulace_project_images/soulace_project_cover_image@1x.png
-              "
-              media="(max-width:767px)">
-            <img
-              src="./img/soulace_project_images/soulace_project_cover_image@2x.png"
-              alt="Soulace project cover image">
-          </picture>
-        </div>
-        <div>
-          <!-- div class="table-of-contents"-->
-          <picture>
-            <source
-              srcset="
-                ./img/soulace_project_images/soulace_project_images_1x/soulace_design_process@1x.png
-              "
-              media="(max-width:767px)">
-            <img
-              src="./img/soulace_project_images/soulace_project_images_2x/soulace_design_process@2x.png"
-              alt="Soulace table of contents">
-          </picture>
-          <div id="table-of-contents">
-            <h2>Table of Contents:</h2>
-            <ul class="contents-list">
-              <li><a href="#01-Empathize">01 Empathize</a></li>
-              <li><a href="#02-Define">02 Define</a></li>
-              <li><a href="#03-Ideate">03 Ideate</a></li>
-              <li><a href="#04-Prototype">04 Prototype</a></li>
-              <li><a href="#05-Test">05 Test</a></li>
-              <li><a href="#06-Implement">06 Implement</a></li>
-              <li><a href="#07-Impact">07 Impact</a></li>
-            </ul>
-          </div>
-        </div>
-        <div id="overview">
-          <!-- div class="project-overview"-->
-          <h2>Overview</h2>
-          <h3>Problem</h3>
-          <p>
-            After a loss, people face emotional and practical challenges. Users
-            need a way to find trusted resources to manage funeral planning,
-            legal matters, and other related tasks, as grief combined with
-            urgent responsibilities makes it difficult to locate and coordinate
-            the necessary services and support.
-          </p>
-          <p>
-            Success Metrics: Faster service coordination, improved task
-            completion, and positive feedback showing users feel supported and
-            find value in the app.
-          </p>
-          <h3>Solution</h3>
-          <p>
-            We propose a user-friendly app offering personalized bereavement
-            support with local service directories, educational resources, 24/7
-            support, family coordination tools and secured document management.
-          </p>
-        </div>
-        <div id="empathize-phase">
-          <!-- div class="empathize-phase"-->
-          <h2 id="01-Empathize">01 Empathize</h2>
-          <p>Conduct research to develop an understanding of our users</p>
-          <h3>User Interviews &amp; Survey | Qualitative Data</h3>
-          <p>
-            Survey:Google form sent to Career Foundry Slack channels and
-            multiple design communities on Discord.
-          </p>
-          <div>
-            <!--div class="survey-results"-->
-            <h4>Survey Results: 12 Participants</h4>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec01_survey_results1_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec01_survey_results1_whitev1@2x.png"
-                alt="Survey results 1">
-            </picture>
-            <ul>
-              <li>
-                Emotional Sensitivity: 50-90% experienced sadness, anger, guilt,
-                numbness &amp; relief
-              </li>
-              <li>
-                Key Features: Over half of respondents selected Articles, tasks
-                checklists, local services, community forums, access to help,
-                app integration and scheduling
-              </li>
-              <li>
-                Task Management: 50/50 were the primary person responsible
-              </li>
-              <li>
-                Cultural Support: 66.7% do not follow specific
-                cultural/religious practices
-              </li>
-            </ul>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec01_survey_results2_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec01_survey_results2_whitev1@2x.png"
-                alt="Survey results 2">
-            </picture>
-            <ul>
-              <li>91.7% have not used any bereavement apps before</li>
-              <li>
-                When asked how likely are you to use an app for bereavement? 25%
-                - Yes | 58.3% - Neutral
-              </li>
-              <li>
-                66.7% believe its helpful to provide the ability to search and
-                recommend local services within the app
-              </li>
-            </ul>
-          </div>
-          <div>
-            <!--div class="user-interviews"-->
-            <h3>
-              User Interviews: Conducted 4 phone interviews, each participant
-              have lost a loved one or a friend.
-            </h3>
-            <p>Number of Participants: 4</p>
-            <p>Age Range: 30-70 yrs old</p>
-            <p>
-              Professions: Retired, Industrial Designer, Customer Success
-              Manager, UX Designer
-            </p>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec01_user_interviews_research_analysis_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec01_user_interviews_research_analysis_whitev1@2x.png"
-                alt="Research Analysis">
-            </picture>
-            <div>
-              <a
-                href="https://www.figma.com/board/DhD3nxhCGN7vzO9cImVo2z/Research-Analysis?node-id=0-1&p=f&t=ZXVbAaUB0kUc2qV4-0"
-                >View full Research Analysis Figma File
-              </a>
-            </div>
-            <h3>Summary</h3>
-            <p>
-              The interviews and surveys strongly confirmed the widespread need
-              for support in this area. Loss is a universal experience and while
-              everyone's emotional journey differs, the practical challenges
-              remain consistent, from funeral planning to legal and estate
-              matters.
-            </p>
-          </div>
-        </div>
-        <div id="define-phase">
-          <!--div class="define-phase"-->
-          <h2 id="02-Define">02 Define</h2>
-          <p>Combine all research and observe where user’s problems exist</p>
-          <h3>How Might We</h3>
-          <p>
-            How might we create an app that eases the burdens of bereavement,
-            reduces stress, and provides practical tools to help users manage
-            their responsibilities while offering comfort and support during
-            this difficult time?
-          </p>
-          <div>
-            <!--div class="user-personas"-->
-            <h3>User Personas</h3>
-            <h4>HMW: Design for users who are not tech savvy?</h4>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec02_user_persona1_ellie_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec02_user_persona1_ellie_whitev1@2x.png"
-                alt="User persona #1 Ellie">
-            </picture>
             <h4>
-              HMW: Provide tailored support for various types of loss, like pet
-              loss?
+              Role: UX Designer | Tools used: Figma | Timeline: June‘24
+              -January’25
             </h4>
+          </div>
+          <div>
+            <!-- div class="project-image"-->
             <picture>
               <source
                 srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec02_user_persona2_natalie_whitev1@1x.png
+                  ./img/soulace_project_images/soulace_project_cover_image@1x.png
                 "
-                media="(max-width:767px)">
+                media="(max-width:767px)"
+              >
               <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec02_user_persona2_natalie_whitev1@2x.png"
-                alt="User persona #2 Natalie">
+                src="./img/soulace_project_images/soulace_project_cover_image@2x.png"
+                alt="Soulace project cover image"
+              >
             </picture>
-            <div>
-              <a
-                href="https://www.figma.com/board/iUd7HkLDwP1qUu4lABgOQ3/User-Journeys-%26-Task-flows-%2F-Analysis?node-id=0-1&p=f&t=yOG7Y5v35RrVSGeR-0"
-                >View Full User Journey &amp; Task Analysis Figma File</a>
+          </div>
+          <div>
+            <!-- div class="table-of-contents"-->
+            <picture>
+              <source
+                srcset="
+                  ./img/soulace_project_images/soulace_project_images_1x/soulace_design_process@1x.png
+                "
+                media="(max-width:767px)"
+              >
+              <img
+                src="./img/soulace_project_images/soulace_project_images_2x/soulace_design_process@2x.png"
+                alt="Soulace table of contents"
+              >
+            </picture>
+            <div id="table-of-contents">
+              <h2>Table of Contents:</h2>
+              <ul class="contents-list">
+                <li><a href="#01-Empathize">01 Empathize</a></li>
+                <li><a href="#02-Define">02 Define</a></li>
+                <li><a href="#03-Ideate">03 Ideate</a></li>
+                <li><a href="#04-Prototype">04 Prototype</a></li>
+                <li><a href="#05-Test">05 Test</a></li>
+                <li><a href="#06-Implement">06 Implement</a></li>
+                <li><a href="#07-Impact">07 Impact</a></li>
+              </ul>
             </div>
           </div>
-          <div id="ideate-phase">
-            <!--div class="ideation-phase"-->
-            <h2 id="03-Ideate">03 Ideate</h2>
-            <p>Generate a range of creative ideas.</p>
-            <h3>Initial Site Map</h3>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_initial_site_map@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec03_initial_site_map@2x.png"
-                alt="Initial site map">
-            </picture>
+          <div id="overview">
+            <!-- div class="project-overview"-->
+            <h2>Overview</h2>
+            <h3>Problem</h3>
+            <p>
+              After a loss, people face emotional and practical challenges.
+              Users need a way to find trusted resources to manage funeral
+              planning, legal matters, and other related tasks, as grief
+              combined with urgent responsibilities makes it difficult to locate
+              and coordinate the necessary services and support.
+            </p>
+            <p>
+              Success Metrics: Faster service coordination, improved task
+              completion, and positive feedback showing users feel supported and
+              find value in the app.
+            </p>
+            <h3>Solution</h3>
+            <p>
+              We propose a user-friendly app offering personalized bereavement
+              support with local service directories, educational resources,
+              24/7 support, family coordination tools and secured document
+              management.
+            </p>
+          </div>
+          <div id="empathize-phase">
+            <!-- div class="empathize-phase"-->
+            <h2 id="01-Empathize">01 Empathize</h2>
+            <p>Conduct research to develop an understanding of our users</p>
+            <h3>User Interviews &amp; Survey | Qualitative Data</h3>
+            <p>
+              Survey:Google form sent to Career Foundry Slack channels and
+              multiple design communities on Discord.
+            </p>
             <div>
-              <!--div class="card-sorting"-->
-              <h3>Card Sorting</h3>
+              <!--div class="survey-results"-->
+              <h4>Survey Results: 12 Participants</h4>
               <picture>
                 <source
                   srcset="
-                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_workshop_whitev1@1x.png
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec01_survey_results1_whitev1@1x.png
                   "
-                  media="(max-width:767px)">
+                  media="(max-width:767px)"
+                >
                 <img
-                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec03_card_sort_workshop_whitev1@2x.png"
-                  alt="Card Sort Workshop">
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec01_survey_results1_whitev1@2x.png"
+                  alt="Survey results 1"
+                >
               </picture>
+              <ul>
+                <li>
+                  Emotional Sensitivity: 50-90% experienced sadness, anger,
+                  guilt, numbness &amp; relief
+                </li>
+                <li>
+                  Key Features: Over half of respondents selected Articles,
+                  tasks checklists, local services, community forums, access to
+                  help, app integration and scheduling
+                </li>
+                <li>
+                  Task Management: 50/50 were the primary person responsible
+                </li>
+                <li>
+                  Cultural Support: 66.7% do not follow specific
+                  cultural/religious practices
+                </li>
+              </ul>
               <picture>
                 <source
                   srcset="
-                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_participants_data_whitev1@1x.png
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec01_survey_results2_whitev1@1x.png
                   "
-                  media="(max-width:767px)">
+                  media="(max-width:767px)"
+                >
                 <img
-                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec03_card_sort_participants_data_whitev1@2x.png"
-                  alt="Card Sort Overview of Participants">
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec01_survey_results2_whitev1@2x.png"
+                  alt="Survey results 2"
+                >
               </picture>
+              <ul>
+                <li>91.7% have not used any bereavement apps before</li>
+                <li>
+                  When asked how likely are you to use an app for bereavement?
+                  25% - Yes | 58.3% - Neutral
+                </li>
+                <li>
+                  66.7% believe its helpful to provide the ability to search and
+                  recommend local services within the app
+                </li>
+              </ul>
+            </div>
+            <div>
+              <!--div class="user-interviews"-->
+              <h3>
+                User Interviews: Conducted 4 phone interviews, each participant
+                have lost a loved one or a friend.
+              </h3>
+              <p>Number of Participants: 4</p>
+              <p>Age Range: 30-70 yrs old</p>
+              <p>
+                Professions: Retired, Industrial Designer, Customer Success
+                Manager, UX Designer
+              </p>
               <picture>
                 <source
                   srcset="
-                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_similarity_matrix_whitev1@1x.png
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec01_user_interviews_research_analysis_whitev1@1x.png
                   "
-                  media="(max-width:767px)">
+                  media="(max-width:767px)"
+                >
                 <img
-                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec03_card_sort_similarity_matrix_whitev1@2x.png"
-                  alt="Card Sort Similarity Matrix">
-              </picture>
-              <picture>
-                <source
-                  srcset="
-                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_participant-centric_analysis_whitev1@1x.png
-                  "
-                  media="(max-width:767px)">
-                <img
-                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec03_card_sort_participant-centric_analysis_whitev1@2x.png"
-                  alt="Card Sort Participant-centric Analysis">
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec01_user_interviews_research_analysis_whitev1@2x.png"
+                  alt="Research Analysis"
+                >
               </picture>
               <div>
                 <a
-                  href="https://www.figma.com/board/qIuX85qAJG9WmKi5CnAeHJ/Task-2.9-Information-Architecture?node-id=0-1&p=f&t=4K4dwC3SMzvlWiql-0"
-                  >View Full Information Architecture Figma File | Revised Site
-                  Map</a>
+                  href="https://www.figma.com/board/DhD3nxhCGN7vzO9cImVo2z/Research-Analysis?node-id=0-1&p=f&t=ZXVbAaUB0kUc2qV4-0"
+                  >View full Research Analysis Figma File
+                </a>
               </div>
-              <h3>Conclusion</h3>
+              <h3>Summary</h3>
               <p>
-                The card sort workshop yielded surprising results that
-                challenged my initial assumptions. Before conducting it with
-                participants, I had carefully prepared by running a self-test,
-                refining the card set from 40 to 30 items, and simplifying the
-                wording. I chose a hybrid card sort approach, providing
-                predefined categories while allowing participants to create
-                their own if needed.
-              </p>
-              <p>
-                The results revealed unexpected patterns. One participant
-                created a "Dedicated Chat Space" category for the "Chat" card,
-                while another made a separate "Task Delegation" category due to
-                unfamiliarity with the term. Many cards proved more versatile
-                than anticipated, fitting logically into multiple categories.
-                For example, the "Favorited Collections of places, articles,
-                etc." card was frequently placed under "My Profile," though I
-                had intended it for the "Home Dashboard" to ensure easy access.
-              </p>
-              <p>
-                The "My Profile" cards presented another interesting case. While
-                I expected the "My__" prefix to clearly signal their category,
-                the results varied significantly between groups. In the first
-                group, 8 of 14 participants categorized them as intended, but in
-                the second group, 6 of 14 participants placed them elsewhere.
-              </p>
-              <p>
-                This experience has led me to consider running an open card sort
-                in the future. Though I initially chose to provide categories to
-                guide participants, given the unique nature of my app concept,
-                the results demonstrated that even careful preparation can't
-                prevent our assumptions from being challenged.
+                The interviews and surveys strongly confirmed the widespread
+                need for support in this area. Loss is a universal experience
+                and while everyone's emotional journey differs, the practical
+                challenges remain consistent, from funeral planning to legal and
+                estate matters.
               </p>
             </div>
           </div>
-        </div>
-        <div id="prototype-phase">
-          <!--div class="prototype-phase"-->
-          <h2 id="04-Prototype">04 Prototype</h2>
-          <p>Build real representations for a range of our ideas</p>
-          <h3>Key tasks to focus on:</h3>
-          <ol>
-            <li>Quick and simple onboarding process</li>
-            <li>Search local services and be able to save to collections</li>
-            <li>Access to resources</li>
-            <li>Find support from communities and experts</li>
-          </ol>
-          <div>
-            <!--div class="prototype-wireframes"-->
-            <h3>Low-Fidelity Wireframes</h3>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_low-fidelity_wireframes_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_low-fidelity_wireframes_whitev1@2x.png"
-                alt="low fidelity wireframes">
-            </picture>
-            <h3>Mid-Fidelity Wireframes</h3>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_mid-fidelity_wireframes_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_mid-fidelity_wireframes_whitev1@2x.png"
-                alt="Mid fidelity wireframes">
-            </picture>
-            <h3>Hi-Fidelity Wireframes</h3>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_high_fidelity_wireframes_welcome_screens_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_high_fidelity_wireframes_welcome_screens_whitev1@2x.png"
-                alt="high fidelity welcome screens">
-            </picture>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_high-fidelity_wireframes_search_resources_screens_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_high-fidelity_wireframes_search_resources_screens_whitev1@2x.png"
-                alt="high fidelity search and resources screens">
-            </picture>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_high-fidelity_wireframes_homescreen_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_high-fidelity_wireframes_homescreen_whitev1@2x.png"
-                alt="high fidelity homescreen">
-            </picture>
-          </div>
-        </div>
-        <div id="test-phase">
-          <!--div class="test-phase"-->
-          <h2 id="05-Test">05 Test</h2>
-          <p>Return to our users for feedback.</p>
-          <div>
-            <!--div class="usability-testing"-->
-            <h3>Usability Testing</h3>
+          <div id="define-phase">
+            <!--div class="define-phase"-->
+            <h2 id="02-Define">02 Define</h2>
+            <p>Combine all research and observe where user’s problems exist</p>
+            <h3>How Might We</h3>
             <p>
-              Goal: Assess user interactions with Soulace, identify pain points,
-              and gather feedback to refine its design. We aim to ensure the app
-              is intuitive and supportive, focusing on seamless service
-              searches, resource access, and account creation.
+              How might we create an app that eases the burdens of bereavement,
+              reduces stress, and provides practical tools to help users manage
+              their responsibilities while offering comfort and support during
+              this difficult time?
             </p>
-            <p>Test Objectives</p>
+            <div>
+              <!--div class="user-personas"-->
+              <h3>User Personas</h3>
+              <h4>HMW: Design for users who are not tech savvy?</h4>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec02_user_persona1_ellie_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec02_user_persona1_ellie_whitev1@2x.png"
+                  alt="User persona #1 Ellie"
+                >
+              </picture>
+              <h4>
+                HMW: Provide tailored support for various types of loss, like
+                pet loss?
+              </h4>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec02_user_persona2_natalie_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec02_user_persona2_natalie_whitev1@2x.png"
+                  alt="User persona #2 Natalie"
+                >
+              </picture>
+              <div>
+                <a
+                  href="https://www.figma.com/board/iUd7HkLDwP1qUu4lABgOQ3/User-Journeys-%26-Task-flows-%2F-Analysis?node-id=0-1&p=f&t=yOG7Y5v35RrVSGeR-0"
+                  >View Full User Journey &amp; Task Analysis Figma File</a
+                >
+              </div>
+            </div>
+            <div id="ideate-phase">
+              <!--div class="ideation-phase"-->
+              <h2 id="03-Ideate">03 Ideate</h2>
+              <p>Generate a range of creative ideas.</p>
+              <h3>Initial Site Map</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_initial_site_map@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec03_initial_site_map@2x.png"
+                  alt="Initial site map"
+                >
+              </picture>
+              <div>
+                <!--div class="card-sorting"-->
+                <h3>Card Sorting</h3>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_workshop_whitev1@1x.png
+                    "
+                    media="(max-width:767px)"
+                  >
+                  <img
+                    src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec03_card_sort_workshop_whitev1@2x.png"
+                    alt="Card Sort Workshop"
+                  >
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_participants_data_whitev1@1x.png
+                    "
+                    media="(max-width:767px)"
+                  >
+                  <img
+                    src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec03_card_sort_participants_data_whitev1@2x.png"
+                    alt="Card Sort Overview of Participants"
+                  >
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_similarity_matrix_whitev1@1x.png
+                    "
+                    media="(max-width:767px)"
+                  >
+                  <img
+                    src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec03_card_sort_similarity_matrix_whitev1@2x.png"
+                    alt="Card Sort Similarity Matrix"
+                  >
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_participant-centric_analysis_whitev1@1x.png
+                    "
+                    media="(max-width:767px)"
+                  >
+                  <img
+                    src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec03_card_sort_participant-centric_analysis_whitev1@2x.png"
+                    alt="Card Sort Participant-centric Analysis"
+                  >
+                </picture>
+                <div>
+                  <a
+                    href="https://www.figma.com/board/qIuX85qAJG9WmKi5CnAeHJ/Task-2.9-Information-Architecture?node-id=0-1&p=f&t=4K4dwC3SMzvlWiql-0"
+                    >View Full Information Architecture Figma File | Revised
+                    Site Map</a
+                  >
+                </div>
+                <h3>Conclusion</h3>
+                <p>
+                  The card sort workshop yielded surprising results that
+                  challenged my initial assumptions. Before conducting it with
+                  participants, I had carefully prepared by running a self-test,
+                  refining the card set from 40 to 30 items, and simplifying the
+                  wording. I chose a hybrid card sort approach, providing
+                  predefined categories while allowing participants to create
+                  their own if needed.
+                </p>
+                <p>
+                  The results revealed unexpected patterns. One participant
+                  created a "Dedicated Chat Space" category for the "Chat" card,
+                  while another made a separate "Task Delegation" category due
+                  to unfamiliarity with the term. Many cards proved more
+                  versatile than anticipated, fitting logically into multiple
+                  categories. For example, the "Favorited Collections of places,
+                  articles, etc." card was frequently placed under "My Profile,"
+                  though I had intended it for the "Home Dashboard" to ensure
+                  easy access.
+                </p>
+                <p>
+                  The "My Profile" cards presented another interesting case.
+                  While I expected the "My__" prefix to clearly signal their
+                  category, the results varied significantly between groups. In
+                  the first group, 8 of 14 participants categorized them as
+                  intended, but in the second group, 6 of 14 participants placed
+                  them elsewhere.
+                </p>
+                <p>
+                  This experience has led me to consider running an open card
+                  sort in the future. Though I initially chose to provide
+                  categories to guide participants, given the unique nature of
+                  my app concept, the results demonstrated that even careful
+                  preparation can't prevent our assumptions from being
+                  challenged.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="prototype-phase">
+            <!--div class="prototype-phase"-->
+            <h2 id="04-Prototype">04 Prototype</h2>
+            <p>Build real representations for a range of our ideas</p>
+            <h3>Key tasks to focus on:</h3>
             <ol>
-              <li>
-                Analyze the ease of account creation and setup, ensuring the
-                process feels straightforward and welcoming.
-              </li>
-              <li>
-                Determine how efficiently users can find and access local
-                services, such as funeral homes, legal offices and support
-                organizations.
-              </li>
-              <li>
-                Assess how easily users can navigate core features, such as
-                adding a new task, schedule an event and upload documents to the
-                vaults.
-              </li>
-              <li>
-                Collect feedback on design, functionality and the overall
-                impressions to align the apps experience with user needs during
-                challenging times.
-              </li>
+              <li>Quick and simple onboarding process</li>
+              <li>Search local services and be able to save to collections</li>
+              <li>Access to resources</li>
+              <li>Find support from communities and experts</li>
             </ol>
-            <p>
-              Methodology: The study will be conducted as moderated remote
-              tests. Sessions will be 30 minutes. Test will start off with a
-              brief introduction, a moment to gain rapport, task instructions
-              and performance with Soulace conducted on a mobile prototype
-              through Figma and a debriefing.
-            </p>
             <div>
-              <a
-                href="https://docs.google.com/document/d/1HQRpz7k91fLaHBrXy7umqHoGoVncg5l8cMFXMGkHU-U/edit?tab=t.0"
-                >View Usability Test Script</a
+              <!--div class="prototype-wireframes"-->
+              <h3>Low-Fidelity Wireframes</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_low-fidelity_wireframes_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_low-fidelity_wireframes_whitev1@2x.png"
+                  alt="low fidelity wireframes"
+                >
+              </picture>
+              <h3>Mid-Fidelity Wireframes</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_mid-fidelity_wireframes_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_mid-fidelity_wireframes_whitev1@2x.png"
+                  alt="Mid fidelity wireframes"
+                >
+              </picture>
+              <h3>Hi-Fidelity Wireframes</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_high_fidelity_wireframes_welcome_screens_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_high_fidelity_wireframes_welcome_screens_whitev1@2x.png"
+                  alt="high fidelity welcome screens"
+                >
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_high-fidelity_wireframes_search_resources_screens_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_high-fidelity_wireframes_search_resources_screens_whitev1@2x.png"
+                  alt="high fidelity search and resources screens"
+                >
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_high-fidelity_wireframes_homescreen_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_high-fidelity_wireframes_homescreen_whitev1@2x.png"
+                  alt="high fidelity homescreen"
+                >
+              </picture>
+            </div>
+          </div>
+          <div id="test-phase">
+            <!--div class="test-phase"-->
+            <h2 id="05-Test">05 Test</h2>
+            <p>Return to our users for feedback.</p>
+            <div>
+              <!--div class="usability-testing"-->
+              <h3>Usability Testing</h3>
+              <p>
+                Goal: Assess user interactions with Soulace, identify pain
+                points, and gather feedback to refine its design. We aim to
+                ensure the app is intuitive and supportive, focusing on seamless
+                service searches, resource access, and account creation.
+              </p>
+              <p>Test Objectives</p>
+              <ol>
+                <li>
+                  Analyze the ease of account creation and setup, ensuring the
+                  process feels straightforward and welcoming.
+                </li>
+                <li>
+                  Determine how efficiently users can find and access local
+                  services, such as funeral homes, legal offices and support
+                  organizations.
+                </li>
+                <li>
+                  Assess how easily users can navigate core features, such as
+                  adding a new task, schedule an event and upload documents to
+                  the vaults.
+                </li>
+                <li>
+                  Collect feedback on design, functionality and the overall
+                  impressions to align the apps experience with user needs
+                  during challenging times.
+                </li>
+              </ol>
+              <p>
+                Methodology: The study will be conducted as moderated remote
+                tests. Sessions will be 30 minutes. Test will start off with a
+                brief introduction, a moment to gain rapport, task instructions
+                and performance with Soulace conducted on a mobile prototype
+                through Figma and a debriefing.
+              </p>
+              <div>
+                <a
+                  href="https://docs.google.com/document/d/1HQRpz7k91fLaHBrXy7umqHoGoVncg5l8cMFXMGkHU-U/edit?tab=t.0"
+                  >View Usability Test Script</a
+                >
+              </div>
+            </div>
+            <div>
+              <!--usability-test-results"-->
+              <h3>Usability Test Results</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_usability_test_results_rainbow_spreadsheet@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_usability_test_results_rainbow_spreadsheet@2x.png"
+                  alt="rainbow spreadsheet"
+                >
+              </picture>
+              <div>
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1EjO9rwgkkGauq7m0fpECSnJ9wHXbmm8NDMuY0utTGyY/edit?gid=3#gid=3"
+                  >View Rainbow Spreadsheet</a
+                >
+              </div>
+              <h3>Affinity Mapping</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_usability_testing_affinity_mapping@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_usability_testing_affinity_mapping@2x.png"
+                  alt="affinity mapping"
+                >
+              </picture>
+              <div>
+                <a
+                  href="https://www.figma.com/board/MTMAnNcDQqUzQAz6cgo42z/Soulace-Affinity-Diagram?node-id=0-1&p=f&t=eIZIH4B6J5ZXRM4w-0"
+                  >View Affinity Diagram Figma File</a
+                >
+              </div>
+            </div>
+            <div>
+              <!--div class="usability-test-report"-->
+              <h3>Usability Test Report</h3>
+              <h4>Test Report Introduction:</h4>
+              <p>
+                This report outlines findings from the usability testing
+                conducted for Soulace. The goal of the test was to evaluate the
+                app’s key features, assess its overall usability, and gather
+                feedback from participants. By analyzing their experiences, we
+                aim to identify areas for improvement and ensure that Soulace
+                provides meaningful support during difficult times. Below are 5
+                main issues we came across and the solutions we implemented.
+              </p>
+              <h4>Issue #1: Font and Icon size / spacing (High)</h4>
+              <ul>
+                <li>
+                  Suggested change: Increase font sizes throughout the app and
+                  add more spacing between icons in the search results to reduce
+                  the likelihood of “fat-finger errors”.
+                </li>
+                <li>
+                  Evidence: While most participants were able to click the icons
+                  accurately, it was noticeable that they had to focus more
+                  carefully to ensure they selected the correct one, both
+                  visually and physically.
+                </li>
+              </ul>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_test_report_issue1_org_rev_designs_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_test_report_issue1_org_rev_designs_whitev1@2x.png"
+                  alt="issue #1 org and rev designs"
+                >
+              </picture>
+              <h4>Issue #2: Layout and Organization (Medium)</h4>
+              <ul>
+                <li>
+                  Suggested change: Adjust the layout of the Resources and
+                  Support pages, as some participants found it unclear which
+                  content belonged on each page.
+                </li>
+                <li>
+                  Evidence: When asked about navigating grief-related
+                  information, participants expressed confusion about
+                  distinguishing content between the Resources and Support
+                  pages. One participant suggested moving the “Community
+                  Support” section to the top of the Support page for better
+                  visibility and hierarchy.
+                </li>
+              </ul>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_test_report_issue2_org_rev_designs_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_test_report_issue2_org_rev_designs_whitev1@2x.png"
+                  alt="issue #2 org and rev designs"
+                >
+              </picture>
+              <h4>Issue #3: Featured Collections section consistency (High)</h4>
+              <ul>
+                <li>
+                  Suggested change: Clarify this section to ensure users
+                  understand that its content remains consistent across all
+                  screens..
+                </li>
+                <li>
+                  Evidence: While participants grasped the general purpose of
+                  the section, some assumed its contents were specific to the
+                  screen they were viewing. For example, they believed the
+                  articles displayed on the home screen differed from those in
+                  the same section on the Resources screen, though the content
+                  is actually identical.
+                </li>
+              </ul>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_test_report_issue3_org_rev_designs_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_test_report_issue3_org_rev_designs_whitev1@2x.png"
+                  alt="issue #3 org and rev designs"
+                >
+              </picture>
+              <h4>Issue #4: Prototype Functionality (High)</h4>
+              <ul>
+                <li>
+                  Suggested change: Increase the functional accuracy of
+                  prototypes in key areas.
+                </li>
+                <li>
+                  Evidence: Participants attempted to scroll and interact with
+                  buttons that were not clickable, leading to some confusion.
+                  While prototypes don’t need to be fully functional, making
+                  interactive elements more responsive in test-specific areas
+                  would improve the testing experience and provide more accurate
+                  user feedback.
+                </li>
+              </ul>
+              <div>
+                <a
+                  href="https://docs.google.com/document/d/1Tz20Dpa2-O1UCqnbegvtqZ9sqKzVSovrCB0CbZVlhsY/edit?tab=t.0"
+                  >View Full Usability Test Report</a
+                >
+              </div>
+            </div>
+          </div>
+          <div id="implement-phase">
+            <!--div class="implement-phase"-->
+            <h2 id="06-Implement">06 Implement</h2>
+            <p>
+              Make changes to the design based on what we have learned from
+              testing
+            </p>
+            <h4>
+              <span class="emphasis"
+                >“As impactful as design thinking can be for an organization, it
+                only leads to true innovation if the vision is executed. The
+                success of design thinking lies in its ability to transform an
+                aspect of the end user’s life. This sixth step — implement — is
+                crucial.” — NN/g</span
               >
+            </h4>
+            <div>
+              <!--div class="final-designs"-->
+              <h3>Final Designs</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_welcome_screens_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_welcome_screens_whitev1@2x.png"
+                  alt="final designs welcome screens"
+                >
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_create_account_homescreen_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_create_account_homescreen_whitev1@2x.png"
+                  alt="final designs create account and homescreen"
+                >
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_search_screen_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_search_screen_whitev1@2x.png"
+                  alt="final designs search and map screens"
+                >
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_resources_support_screens_whitev1@1x.png
+                  "
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_resources_support_screens_whitev1@2x.png"
+                  alt="final designs resources and support screen"
+                >
+              </picture>
             </div>
           </div>
-          <div>
-            <!--usability-test-results"-->
-            <h3>Usability Test Results</h3>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_usability_test_results_rainbow_spreadsheet@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_usability_test_results_rainbow_spreadsheet@2x.png"
-                alt="rainbow spreadsheet">
-            </picture>
-            <div>
-              <a
-                href="https://docs.google.com/spreadsheets/d/1EjO9rwgkkGauq7m0fpECSnJ9wHXbmm8NDMuY0utTGyY/edit?gid=3#gid=3"
-                >View Rainbow Spreadsheet</a>
-            </div>
-            <h3>Affinity Mapping</h3>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_usability_testing_affinity_mapping@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_usability_testing_affinity_mapping@2x.png"
-                alt="affinity mapping">
-            </picture>
-            <div>
-              <a
-                href="https://www.figma.com/board/MTMAnNcDQqUzQAz6cgo42z/Soulace-Affinity-Diagram?node-id=0-1&p=f&t=eIZIH4B6J5ZXRM4w-0"
-                >View Affinity Diagram Figma File</a>
-            </div>
-          </div>
-          <div>
-            <!--div class="usability-test-report"-->
-            <h3>Usability Test Report</h3>
-            <h4>Test Report Introduction:</h4>
+          <div id="impact-phase">
+            <!--div class="impact phase"-->
+            <h2 id="07-Impact">07 Impact</h2>
             <p>
-              This report outlines findings from the usability testing conducted
-              for Soulace. The goal of the test was to evaluate the app’s key
-              features, assess its overall usability, and gather feedback from
-              participants. By analyzing their experiences, we aim to identify
-              areas for improvement and ensure that Soulace provides meaningful
-              support during difficult times. Below are 5 main issues we came
-              across and the solutions we implemented.
+              How well a design achieves its purpose, resonates emotionally, and
+              influences behavior or decision-making
             </p>
-            <h4>Issue #1: Font and Icon size / spacing (High)</h4>
-            <ul>
-              <li>
-                Suggested change: Increase font sizes throughout the app and add
-                more spacing between icons in the search results to reduce the
-                likelihood of “fat-finger errors”.
-              </li>
-              <li>
-                Evidence: While most participants were able to click the icons
-                accurately, it was noticeable that they had to focus more
-                carefully to ensure they selected the correct one, both visually
-                and physically.
-              </li>
-            </ul>
             <picture>
               <source
                 srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_test_report_issue1_org_rev_designs_whitev1@1x.png
+                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec07_impact_quotes_whitev1@1x.png
                 "
-                media="(max-width:767px)">
+                media="(max-width:767px)"
+              >
               <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_test_report_issue1_org_rev_designs_whitev1@2x.png"
-                alt="issue #1 org and rev designs">
+                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec07_impact_quotes_whitev1@2x.png"
+                alt="impact feedback"
+              >
             </picture>
-            <h4>Issue #2: Layout and Organization (Medium)</h4>
-            <ul>
-              <li>
-                Suggested change: Adjust the layout of the Resources and Support
-                pages, as some participants found it unclear which content
-                belonged on each page.
-              </li>
-              <li>
-                Evidence: When asked about navigating grief-related information,
-                participants expressed confusion about distinguishing content
-                between the Resources and Support pages. One participant
-                suggested moving the “Community Support” section to the top of
-                the Support page for better visibility and hierarchy.
-              </li>
-            </ul>
+            <h3>Conclusion</h3>
+            <p>
+              In conclusion, creating Soulace has been a meaningful journey. An
+              idea rooted from a personal experience, the inspiration to create
+              Soulace came from a genuine desire to offer meaningful support to
+              those navigating the challenge of loss. The mission was to craft a
+              supportive, empathetic space where individuals navigating loss
+              could find comfort, clarity and strength.
+            </p>
+            <p>
+              In a time when burdens feel overwhelming, Soulace stands as a tool
+              to ease responsibilities, reduce stress and provide a sense of
+              solace. The importance of this work lies in its ability to
+              transform a difficult experience into one that feels guided,
+              supported and a little less isolating. Soulace is more than an
+              app, its a companion for the healing journey we all will
+              experience at some point during our lifetime.
+            </p>
             <picture>
               <source
                 srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_test_report_issue2_org_rev_designs_whitev1@1x.png
+                  ./img/soulace_project_images/soulace_project_images_1x/thank_you_whitev1@1x.png
                 "
-                media="(max-width:767px)">
+                media="(max-width:767px)"
+              >
               <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_test_report_issue2_org_rev_designs_whitev1@2x.png"
-                alt="issue #2 org and rev designs">
-            </picture>
-            <h4>Issue #3: Featured Collections section consistency (High)</h4>
-            <ul>
-              <li>
-                Suggested change: Clarify this section to ensure users
-                understand that its content remains consistent across all
-                screens..
-              </li>
-              <li>
-                Evidence: While participants grasped the general purpose of the
-                section, some assumed its contents were specific to the screen
-                they were viewing. For example, they believed the articles
-                displayed on the home screen differed from those in the same
-                section on the Resources screen, though the content is actually
-                identical.
-              </li>
-            </ul>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_test_report_issue3_org_rev_designs_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_test_report_issue3_org_rev_designs_whitev1@2x.png"
-                alt="issue #3 org and rev designs">
-            </picture>
-            <h4>Issue #4: Prototype Functionality (High)</h4>
-            <ul>
-              <li>
-                Suggested change: Increase the functional accuracy of prototypes
-                in key areas.
-              </li>
-              <li>
-                Evidence: Participants attempted to scroll and interact with
-                buttons that were not clickable, leading to some confusion.
-                While prototypes don’t need to be fully functional, making
-                interactive elements more responsive in test-specific areas
-                would improve the testing experience and provide more accurate
-                user feedback.
-              </li>
-            </ul>
-            <div>
-              <a
-                href="https://docs.google.com/document/d/1Tz20Dpa2-O1UCqnbegvtqZ9sqKzVSovrCB0CbZVlhsY/edit?tab=t.0"
-                >View Full Usability Test Report</a>
-            </div>
-          </div>
-        </div>
-        <div id="implement-phase">
-          <!--div class="implement-phase"-->
-          <h2 id="06-Implement">06 Implement</h2>
-          <p>
-            Make changes to the design based on what we have learned from
-            testing
-          </p>
-          <h4>
-            <span class="emphasis"
-              >“As impactful as design thinking can be for an organization, it
-              only leads to true innovation if the vision is executed. The
-              success of design thinking lies in its ability to transform an
-              aspect of the end user’s life. This sixth step — implement — is
-              crucial.” — NN/g</span>
-          </h4>
-          <div>
-            <!--div class="final-designs"-->
-            <h3>Final Designs</h3>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_welcome_screens_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_welcome_screens_whitev1@2x.png"
-                alt="final designs welcome screens">
-            </picture>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_create_account_homescreen_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_create_account_homescreen_whitev1@2x.png"
-                alt="final designs create account and homescreen">
-            </picture>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_search_screen_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_search_screen_whitev1@2x.png"
-                alt="final designs search and map screens">
-            </picture>
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_resources_support_screens_whitev1@1x.png
-                "
-                media="(max-width:767px)">
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_resources_support_screens_whitev1@2x.png"
-                alt="final designs resources and support screen">
+                src="./img/soulace_project_images/soulace_project_images_2x/thank_you_whitev1@2x.png"
+                alt="thank you"
+              >
             </picture>
           </div>
-        </div>
-        <div id="impact-phase">
-          <!--div class="impact phase"-->
-          <h2 id="07-Impact">07 Impact</h2>
-          <p>
-            How well a design achieves its purpose, resonates emotionally, and
-            influences behavior or decision-making
-          </p>
-          <picture>
-            <source
-              srcset="
-                ./img/soulace_project_images/soulace_project_images_1x/soulace_sec07_impact_quotes_whitev1@1x.png
-              "
-              media="(max-width:767px)">
-            <img
-              src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec07_impact_quotes_whitev1@2x.png"
-              alt="impact feedback">
-          </picture>
-          <h3>Conclusion</h3>
-          <p>
-            In conclusion, creating Soulace has been a meaningful journey. An
-            idea rooted from a personal experience, the inspiration to create
-            Soulace came from a genuine desire to offer meaningful support to
-            those navigating the challenge of loss. The mission was to craft a
-            supportive, empathetic space where individuals navigating loss could
-            find comfort, clarity and strength.
-          </p>
-          <p>
-            In a time when burdens feel overwhelming, Soulace stands as a tool
-            to ease responsibilities, reduce stress and provide a sense of
-            solace. The importance of this work lies in its ability to transform
-            a difficult experience into one that feels guided, supported and a
-            little less isolating. Soulace is more than an app, its a companion
-            for the healing journey we all will experience at some point during
-            our lifetime.
-          </p>
-          <picture>
-            <source
-              srcset="
-                ./img/soulace_project_images/soulace_project_images_1x/thank_you_whitev1@1x.png
-              "
-              media="(max-width:767px)">
-            <img
-              src="./img/soulace_project_images/soulace_project_images_2x/thank_you_whitev1@2x.png"
-              alt="thank you">
-          </picture>
         </div>
       </div>
-    </div>
     </main>
     <br>
     <!-- For the footer -->
     <footer id="contact">
       <div class="container">
-      <h2>Good design is felt, not just seen. Let's create!</h2>
-      <p>
-        Have an idea? I'd love to hear it!
-        <a href="tel:+7025188538">Call me</a> or
-        <a href="https://calendly.com/janedoestudent94/30min"
-          >Schedule a meeting</a>
-      </p>
-      <div>
-        <!-- mailto link generator -->
-        Prefer sending an email?
-        <a
-          href="mailto:janedoestudent94@gmail.com?subject=Excited%20to%20Connect!&body=Hi%20%5BYour%20Name%5D%2C%0AI%20came%20across%20your%20work%20and%20really%20love%20your%20approach%20to%20UX%20design!%20I%E2%80%99d%20love%20to%20chat%20about%20potential%20collaboration%20or%20just%20exchange%20insights.%20Looking%20forward%20to%20hearing%20from%20you!%0A%0ABest%2C%0A%5BYour%20Name%5D" class="button contact"
-          >Email me</a>
-      </div>
-      <br>
-      <div>
-        <ul class="socials">
-          <!--Social Media Layout and Placeholders-->
-          <li>
-            <a href="https://www.linkedin.com/" target="_blank">
-              <img
-                src="./img/socials_images/linkedin_logo_icon.svg"
-                alt="LinkedIn link">
-            </a>
-          </li>
-          <li>
-            <a href="https://x.com/" target="_blank">
-              <img
-                src="./img/socials_images/twitter_logo_icon.svg"
-                alt="Twitter link">
-            </a>
-          </li>
-          <li>
-            <a href="https://medium.com/">
-              <img
-                src="./img/socials_images/medium_logo_icon.svg"
-                alt="Medium link">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <p>Copyright Abegail Taitano 2025</p>
+        <h2>Good design is felt, not just seen. Let's create!</h2>
+        <p>
+          Have an idea? I'd love to hear it!
+          <a href="tel:+7025188538">Call me</a> or
+          <a href="https://calendly.com/janedoestudent94/30min"
+            >Schedule a meeting</a
+          >
+        </p>
+        <div>
+          <!-- mailto link generator -->
+          Prefer sending an email?
+          <a
+            href="mailto:janedoestudent94@gmail.com?subject=Excited%20to%20Connect!&body=Hi%20%5BYour%20Name%5D%2C%0AI%20came%20across%20your%20work%20and%20really%20love%20your%20approach%20to%20UX%20design!%20I%E2%80%99d%20love%20to%20chat%20about%20potential%20collaboration%20or%20just%20exchange%20insights.%20Looking%20forward%20to%20hearing%20from%20you!%0A%0ABest%2C%0A%5BYour%20Name%5D"
+            class="button contact"
+            >Email me</a
+          >
+        </div>
+        <br>
+        <div>
+          <ul class="socials">
+            <!--Social Media Layout and Placeholders-->
+            <li>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img
+                  src="./img/socials_images/linkedin_logo_icon.svg"
+                  alt="LinkedIn link"
+                >
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/" target="_blank">
+                <img
+                  src="./img/socials_images/twitter_logo_icon.svg"
+                  alt="Twitter link"
+                >
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/">
+                <img
+                  src="./img/socials_images/medium_logo_icon.svg"
+                  alt="Medium link"
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p>Copyright Abegail Taitano 2025</p>
       </div>
     </footer>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
