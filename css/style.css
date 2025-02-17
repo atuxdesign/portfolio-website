@@ -448,12 +448,12 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
-  .col-md-5 {
-    width: 40%;
+  .col-lg-5 {
+    width: 45%;
   }
 
-  .col-md-7 {
-    width: 60%;
+  .col-lg-7 {
+    width: 50%;
   }
 }
 
