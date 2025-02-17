@@ -368,7 +368,7 @@ nav > ul > li > a:active {
 }
 
 #soulace {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 0;
   padding: 30px;
@@ -453,7 +453,7 @@ Large devices (1024px or larger)
   }
 
   .col-lg-7 {
-    width: 50%;
+    width: 55%;
   }
 }
 
