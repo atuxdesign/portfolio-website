@@ -4,6 +4,11 @@
     <!-- Head includes the meta data-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="AbegailTaitano">
+    <meta
+      name="description"
+      content="Abegail Taitano Portfolio, where empathy, creativity, and logic converge. Through design and code, I aim to create intuitive, human-centered experiences that go beyond aesthetics"
+    >
     <!--normalize.css file-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!-- Main CSS file-->
@@ -17,25 +22,22 @@
     >
     <!-- favicon -->
     <link href="./img/favicon.ico" rel="shortcut icon">
-    <meta name="author" content="AbegailTaitano">
-    <meta
-      name="description"
-      content="Abegail Taitano Portfolio, where empathy, creativity, and logic converge. Through design and code, I aim to create intuitive, human-centered experiences that go beyond aesthetics"
-    >
+    <!-- Fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/5e7ab3af65.js" crossorigin="anonymous"></script>
     <title>About - Abegail Taitano</title>
   </head>
   <body>
     <!-- For the header -->
     <header>
       <div class="container">
-        <!-- Logo -->
+        <!-- Clickable Logo Image -->
+        
+        <div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
-          <!--add link to home here-->
           <img
             src="img/logo_profile_images/logo_test.svg"
             class="logo"
-            alt="clickable logo image"
-          >
+            alt="clickable logo image">
         </a>
         <!-- For the Navigation -->
         <nav>
@@ -43,9 +45,11 @@
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <!-- <a href="about.html#skills">My Skills</a>-->
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
+      </div>
       </div>
     </header>
     <main>
@@ -124,6 +128,7 @@
           </div>
         </div>
     </main>
+    <button id="backToTop">↑</button>
     <!-- For the footer -->
     <footer id="contact">
       <div class="container">
@@ -177,6 +182,7 @@
         <p>Copyright Abegail Taitano 2025</p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
