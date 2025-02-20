@@ -4,6 +4,11 @@
     <!-- Head includes the meta data-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="AbegailTaitano">
+    <meta
+      name="description"
+      content="Abegail Taitano Portfolio, where empathy, creativity, and logic converge. Through design and code, I aim to create intuitive, human-centered experiences that go beyond aesthetics"
+    >
     <!--normalize.css file-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!-- Main CSS file-->
@@ -17,10 +22,8 @@
     >
     <!-- favicon -->
     <link href="./img/favicon.ico" rel="shortcut icon">
-    <meta name="author" content="AbegailTaitano">
-    <meta
-      name="description"
-      content="Abegail Taitano Portfolio, where empathy, creativity, and logic converge. Through design and code, I aim to create intuitive, human-centered experiences that go beyond aesthetics">
+    <!-- Fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/5e7ab3af65.js" crossorigin="anonymous"></script>
     <title>Soulace Case Study</title>
   </head>
   <body>
@@ -28,12 +31,12 @@
     <header>
       <div class="container">
         <!-- Clickable Logo Image -->
+        <div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
           <img
             src="img/logo_profile_images/logo_test.svg"
             class="logo"
-            alt="clickable logo image"
-          >
+            alt="clickable logo image">
         </a>
         <!-- For the Navigation -->
         <nav>
@@ -41,16 +44,16 @@
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <!-- <a href="about.html#skills">My Skills</a>-->
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
+      </div>
       </div>
     </header>
     <main id="soulace">
       <div id="soulace-content">
-        <!--div class="project-container"-->
         <div class="container">
-          <!--div class="project-header"-->
           <h1>Soulace</h1>
           <div class="row">
             <h4>
@@ -59,7 +62,6 @@
             </h4>
           </div>
           <div>
-            <!-- div class="project-image"-->
             <picture>
               <source
                 srcset="
@@ -74,7 +76,7 @@
             </picture>
           </div>
           <div>
-            <!-- div class="table-of-contents"-->
+            <!-- table of contents image -->
             <picture>
               <source
                 srcset="
@@ -87,21 +89,26 @@
                 alt="Soulace table of contents"
               >
             </picture>
-            <div id="table-of-contents">
-              <h2>Table of Contents:</h2>
-              <ul class="contents-list">
-                <li><a href="#01-Empathize">01 Empathize</a></li>
-                <li><a href="#02-Define">02 Define</a></li>
-                <li><a href="#03-Ideate">03 Ideate</a></li>
-                <li><a href="#04-Prototype">04 Prototype</a></li>
-                <li><a href="#05-Test">05 Test</a></li>
-                <li><a href="#06-Implement">06 Implement</a></li>
-                <li><a href="#07-Impact">07 Impact</a></li>
-              </ul>
+            <div id="floating-toc">
+              <!-- table of contents icon -->
+              <button id="toggle-toc" class="toc-collapsed"><i class="fa-solid fa-list-ol fa-lg" style="color: #1a1a1a;"></i></button>
+            
+              <!-- Expanded table of contents -->
+              <div class="toc-container">
+                <button id="close-toc"><i class="fa-solid fa-circle-xmark" style="color: #c7c6c6;"></i></button>
+                <ul class="toc-list">
+                  <li><a href="#01-Empathize">01 Empathize</a></li>
+                  <li><a href="#02-Define">02 Define</a></li>
+                  <li><a href="#03-Ideate">03 Ideate</a></li>
+                  <li><a href="#04-Prototype">04 Prototype</a></li>
+                  <li><a href="#05-Test">05 Test</a></li>
+                  <li><a href="#06-Implement">06 Implement</a></li>
+                  <li><a href="#07-Impact">07 Impact</a></li>
+                </ul>
+              </div>
             </div>
           </div>
           <div id="overview">
-            <!-- div class="project-overview"-->
             <h2>Overview</h2>
             <h3>Problem</h3>
             <p>
@@ -125,7 +132,6 @@
             </p>
           </div>
           <div id="empathize-phase">
-            <!-- div class="empathize-phase"-->
             <h2 id="01-Empathize">01 Empathize</h2>
             <p>Conduct research to develop an understanding of our users</p>
             <h3>User Interviews &amp; Survey | Qualitative Data</h3>
@@ -134,7 +140,6 @@
               multiple design communities on Discord.
             </p>
             <div>
-              <!--div class="survey-results"-->
               <h4>Survey Results: 12 Participants</h4>
               <picture>
                 <source
@@ -191,7 +196,6 @@
               </ul>
             </div>
             <div>
-              <!--div class="user-interviews"-->
               <h3>
                 User Interviews: Conducted 4 phone interviews, each participant
                 have lost a loved one or a friend.
@@ -231,7 +235,6 @@
             </div>
           </div>
           <div id="define-phase">
-            <!--div class="define-phase"-->
             <h2 id="02-Define">02 Define</h2>
             <p>Combine all research and observe where user’s problems exist</p>
             <h3>How Might We</h3>
@@ -242,7 +245,6 @@
               this difficult time?
             </p>
             <div>
-              <!--div class="user-personas"-->
               <h3>User Personas</h3>
               <h4>HMW: Design for users who are not tech savvy?</h4>
               <picture>
@@ -281,7 +283,6 @@
               </div>
             </div>
             <div id="ideate-phase">
-              <!--div class="ideation-phase"-->
               <h2 id="03-Ideate">03 Ideate</h2>
               <p>Generate a range of creative ideas.</p>
               <h3>Initial Site Map</h3>
@@ -298,7 +299,6 @@
                 >
               </picture>
               <div>
-                <!--div class="card-sorting"-->
                 <h3>Card Sorting</h3>
                 <picture>
                   <source
@@ -396,7 +396,6 @@
             </div>
           </div>
           <div id="prototype-phase">
-            <!--div class="prototype-phase"-->
             <h2 id="04-Prototype">04 Prototype</h2>
             <p>Build real representations for a range of our ideas</p>
             <h3>Key tasks to focus on:</h3>
@@ -407,7 +406,6 @@
               <li>Find support from communities and experts</li>
             </ol>
             <div>
-              <!--div class="prototype-wireframes"-->
               <h3>Low-Fidelity Wireframes</h3>
               <picture>
                 <source
@@ -474,11 +472,9 @@
             </div>
           </div>
           <div id="test-phase">
-            <!--div class="test-phase"-->
             <h2 id="05-Test">05 Test</h2>
             <p>Return to our users for feedback.</p>
             <div>
-              <!--div class="usability-testing"-->
               <h3>Usability Testing</h3>
               <p>
                 Goal: Assess user interactions with Soulace, identify pain
@@ -558,13 +554,12 @@
               </picture>
               <div>
                 <a
-                  href="https://www.figma.com/board/MTMAnNcDQqUzQAz6cgo42z/Soulace-Affinity-Diagram?node-id=0-1&p=f&t=eIZIH4B6J5ZXRM4w-0"
+                  href="https://www.figma.com/board/MTMAnNcDQqUzQAz6cgo42z/Soulace-Affinity-Diagram?node-id=0-1&t=03zpGPFRbxzLHx06-1"
                   >View Affinity Diagram Figma File</a
                 >
               </div>
             </div>
             <div>
-              <!--div class="usability-test-report"-->
               <h3>Usability Test Report</h3>
               <h4>Test Report Introduction:</h4>
               <p>
@@ -682,7 +677,6 @@
             </div>
           </div>
           <div id="implement-phase">
-            <!--div class="implement-phase"-->
             <h2 id="06-Implement">06 Implement</h2>
             <p>
               Make changes to the design based on what we have learned from
@@ -698,7 +692,6 @@
               >
             </h4>
             <div>
-              <!--div class="final-designs"-->
               <h3>Final Designs</h3>
               <picture>
                 <source
@@ -751,7 +744,6 @@
             </div>
           </div>
           <div id="impact-phase">
-            <!--div class="impact phase"-->
             <h2 id="07-Impact">07 Impact</h2>
             <p>
               How well a design achieves its purpose, resonates emotionally, and
@@ -803,7 +795,7 @@
         </div>
       </div>
     </main>
-    <br>
+    <button id="backToTop">↑</button>
     <!-- For the footer -->
     <footer id="contact">
       <div class="container">
@@ -857,6 +849,7 @@
         <p>Copyright Abegail Taitano 2025</p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
