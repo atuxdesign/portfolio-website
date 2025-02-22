@@ -1,5 +1,5 @@
 console.log("Hello! Welcome to Abegail Taitano's Portfolio Site");
-/* MENU TOGGLE */
+
 function menuToggle() {
   var x = document.getElementById("myNavtoggle");
   if (x.className === "navtoggle") {
