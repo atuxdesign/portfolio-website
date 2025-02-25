@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Head includes the meta data-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="AbegailTaitano">
+    <meta
+      name="description"
+      content="Abegail Taitano Portfolio, where empathy, creativity, and logic converge. Through design and code, I aim to create intuitive, human-centered experiences that go beyond aesthetics"
+    >
+    <!--normalize.css file-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!--Main CSS file-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    >
+    <!--favicon-->
+    <link href="./img/favicon.ico" rel="shortcut icon">
+    <!--Fontawesome CDN-->
+    <script src="https://kit.fontawesome.com/5e7ab3af65.js" crossorigin="anonymous"></script>
+    <title>Pocketful Case Study</title>
+  </head>
+  <body>
+    <!--For the header-->
+    <header>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <img
+            src="img/logo_profile_images/logo_test.svg"
+            class="logo"
+            alt="clickable logo image">
+        </a>
+        <!--For the Navigation-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <!--<a href="about.html#skills">My Skills</a>-->
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+    </header>
+    <main>
+      <div id="pocketful">
+        <div class="pocketful-content">
+            <div class="row">
+              <h1>Pocketful</h1>
+              <h4>
+                Role: UX Designer | Tools used: Figma | Timeline: 4 Weeks
+              </h4>
+              <picture>
+                <source
+                  srcset="./img/pocketful_project_images/work_in_progress@1x.png"
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/pocketful_project_images/work_in_progress@2x.png"
+                  class="work-in-progress-img"
+                  alt="work in progress image"
+                >
+              </picture>
+          </div>
+          </div>
+          </div>
+    </main>
+    <button id="backToTop">↑</button>
+    <!--For the footer-->
+    <footer id="contact">
+      <div class="container">
+        <h2>Good design is felt, not just seen. Let's create!</h2>
+        <p>
+          Have an idea? I'd love to hear it!
+          <a href="tel:+7025188538">Call me</a> or
+          <a href="https://calendly.com/janedoestudent94/30min"
+            >Schedule a meeting</a
+          >
+        </p>
+        <div>
+          <!--mailto link generator-->
+          Prefer sending an email?
+          <a
+            href="mailto:janedoestudent94@gmail.com?subject=Excited%20to%20Connect!&body=Hi%20%5BYour%20Name%5D%2C%0AI%20came%20across%20your%20work%20and%20really%20love%20your%20approach%20to%20UX%20design!%20I%E2%80%99d%20love%20to%20chat%20about%20potential%20collaboration%20or%20just%20exchange%20insights.%20Looking%20forward%20to%20hearing%20from%20you!%0A%0ABest%2C%0A%5BYour%20Name%5D"
+            class="button contact"
+            >Email me</a
+          >
+        </div>
+        <br>
+        <div>
+          <ul class="socials">
+            <!--Social Media Layout and Placeholders-->
+            <li>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img
+                  src="./img/socials_images/linkedin_logo_icon.svg"
+                  alt="LinkedIn link"
+                >
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/" target="_blank">
+                <img
+                  src="./img/socials_images/twitter_logo_icon.svg"
+                  alt="Twitter link"
+                >
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/">
+                <img
+                  src="./img/socials_images/medium_logo_icon.svg"
+                  alt="Medium link"
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p>Copyright Abegail Taitano 2025</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
