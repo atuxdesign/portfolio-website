@@ -411,7 +411,7 @@ nav > ul > li > a:active {
 }
 
 .about-img {
-  max-width: 450px;
+  max-width: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -451,6 +451,7 @@ nav > ul > li > a:active {
 
 #soulace h4 {
   text-align: center;
+  font-size: 22px;
 }
 
 #table-of-contents h2 {
@@ -549,6 +550,39 @@ nav > ul > li > a:active {
 
 .toc-list a:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+/* POCKETFUL PAGE */
+.pocketful-title {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#pocketful {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.467);
+}
+
+.pocketful-content {
+  padding-top: 20px 0;
+}
+
+.pocketful-content h4 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.work-in-progress-img {
+  align-items: center;
+  padding-top: 20px;
+  display: block;
+
 }
 
 /* FOOTER SOCIALS */
