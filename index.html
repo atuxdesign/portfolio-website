@@ -38,7 +38,7 @@
         <!--For the Navigation-->
         <nav>
           <ul>
-            <li><a href="index.html">Work</a></li>
+            <li><a href="#work">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -50,19 +50,20 @@
     <main>
       <!--For the hero section-->
       <div id="hero">
-        <div class="container">
+        <div class="hero-container">
           <h1>
-            Hello, I'm Abegail!
+            Hello <span class="wave"><img src="img/handwave.png" alt="handwave icon"></span>, I'm Abegail!
             <br>
             <span
-              >Designing with empathy, creating experiences that feel
+              >Empathetic driven design, creating experiences that feel
               human.</span
             >
           </h1>
           <p>
             Through UX design and code, I aim to create intuitive,
             human-centered experiences that go beyond aesthetics.
-          </p>
+            </p>
+            <div class="scroll-down" onclick="scrollToContent()"><img src="./img/down_arrow.png" alt="down arrow icon"></div> <!--scroll down arrow-->
         </div>
       </div>
       <!--End of Hero section-->
@@ -136,7 +137,6 @@
           <!--third project-->
           <div class="row">
             <div class="column col-md-6 col-lg-7">
-              <picture>
                 <svg
                   id="about-picture"
                   xmlns="http://www.w3.org/2000/svg"
@@ -2492,7 +2492,6 @@
                     ></path>
                   </g>
                 </svg>
-              </picture>
             </div>
             <div class="column col-md-6 col-lg-5">
               <h3>CSS Animation</h3>
@@ -2512,7 +2511,6 @@
         <h2>Good design is felt, not just seen. Let's create!</h2>
         <p>
           Have an idea? I'd love to hear it!
-          <a href="tel:+1234567891">Call me</a> or <!--took out personal number for now-->
           <a href="https://calendly.com/janedoestudent94/30min"
             >Schedule a meeting</a
           >
