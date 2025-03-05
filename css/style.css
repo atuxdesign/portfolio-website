@@ -80,7 +80,7 @@ body {
   background-color: #fff;
   margin: 0;
   font-family: "Roboto Mono", serif;
-  font-size: 18px; /* Sets the font size to 16px */
+  font-size: 18px; /* Sets the font size to 18px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
@@ -773,7 +773,7 @@ nav > ul > li > a:active {
 }
 
 .pocketful-content {
-  padding-top: 20px 0;
+  padding-top: 20px;
 }
 
 .pocketful-content h4 {
