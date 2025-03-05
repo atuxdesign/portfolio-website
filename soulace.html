@@ -40,7 +40,7 @@
         <!--For the Navigation-->
         <nav>
           <ul>
-            <li><a href="index.html">Work</a></li>
+            <li><a href="index.html#work">Work</a></li>
             <li><a href="about.html">About</a></li>
             <!-- <a href="about.html#skills">My Skills</a>-->
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
@@ -50,7 +50,9 @@
       </div>
       </div>
     </header>
-    <main id="soulace">
+    <main>
+    <div>
+    <div id="soulace">
       <div id="soulace-content">
         <div class="container">
           <h1>Soulace</h1>
@@ -60,7 +62,8 @@
             </h4>
           </div>
           <div>
-            <picture>
+            <div class="image-container">
+            <picture class="expand-image">
               <source
                 srcset="
                   ./img/soulace_project_images/soulace_project_cover_image@1x.png
@@ -73,24 +76,46 @@
               >
             </picture>
           </div>
+          <div id="overview">
+            <h2>Overview</h2>
+            <h3>Problem</h3>
+            <p>
+              After a loss, people face emotional and practical challenges.
+              Users need a way to find trusted resources to manage funeral
+              planning, legal matters, and other related tasks, as grief
+              combined with urgent responsibilities makes it difficult to locate
+              and coordinate the necessary services and support.
+            </p>
+            <h3>Solution</h3>
+            <p>
+              We propose a user-friendly app offering personalized bereavement
+              support with local service directories, educational resources,
+              24/7 support, family coordination tools and secured document
+              management.
+              </p>
+              <p>
+                Success Metrics: Faster service coordination, improved task
+                completion, and positive feedback showing users feel supported and
+                find value in the app.
+              </p>
+          </div>
+          <br>
           <div>
-            <!--table of contents image-->
-            <picture>
-              <source
-                srcset="
-                  ./img/soulace_project_images/soulace_project_images_1x/soulace_design_process@1x.png
-                "
-                media="(max-width:767px)"
-              >
-              <img
-                src="./img/soulace_project_images/soulace_project_images_2x/soulace_design_process@2x.png"
-                alt="Soulace table of contents"
-              >
-            </picture>
+          <!--IMAGE MODAL EXPERIMENTAL CODE-->
+              <picture class="expand-image">
+                <source
+                  srcset="./img/soulace_project_images/soulace_project_images_1x/soulace_design_process@1x.png"
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="./img/soulace_project_images/soulace_project_images_2x/soulace_design_process@2x.png"
+                  alt="Soulace design process"
+                >
+              </picture>
+            </div>
             <div id="floating-toc">
               <!--table of contents icon-->
               <button id="toggle-toc" class="toc-collapsed"><i class="fa-solid fa-list-ol fa-lg" style="color: #2d2d2d;"></i></button>
-            
               <!--Expanded table of contents-->
               <div class="toc-container">
                 <button id="close-toc"><i class="fa-solid fa-circle-xmark" style="color: #c7c6c6;"></i></button>
@@ -106,29 +131,6 @@
               </div>
             </div>
           </div>
-          <div id="overview">
-            <h2>Overview</h2>
-            <h3>Problem</h3>
-            <p>
-              After a loss, people face emotional and practical challenges.
-              Users need a way to find trusted resources to manage funeral
-              planning, legal matters, and other related tasks, as grief
-              combined with urgent responsibilities makes it difficult to locate
-              and coordinate the necessary services and support.
-            </p>
-            <p>
-              Success Metrics: Faster service coordination, improved task
-              completion, and positive feedback showing users feel supported and
-              find value in the app.
-            </p>
-            <h3>Solution</h3>
-            <p>
-              We propose a user-friendly app offering personalized bereavement
-              support with local service directories, educational resources,
-              24/7 support, family coordination tools and secured document
-              management.
-            </p>
-          </div>
           <div id="empathize-phase">
             <h2 id="01-Empathize">01 Empathize</h2>
             <p>Conduct research to develop an understanding of our users</p>
@@ -139,7 +141,7 @@
             </p>
             <div>
               <h4>Survey Results: 12 Participants</h4>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec01_survey_results1_whitev1@1x.png
@@ -151,6 +153,8 @@
                   alt="Survey results 1"
                 >
               </picture>
+              </div>
+              <br>
               <ul>
                 <li>
                   Emotional Sensitivity: 50-90% experienced sadness, anger,
@@ -169,7 +173,8 @@
                   cultural/religious practices
                 </li>
               </ul>
-              <picture>
+              <br>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec01_survey_results2_whitev1@1x.png
@@ -204,7 +209,7 @@
                 Professions: Retired, Industrial Designer, Customer Success
                 Manager, UX Designer
               </p>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec01_user_interviews_research_analysis_whitev1@1x.png
@@ -213,7 +218,7 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec01_user_interviews_research_analysis_whitev1@2x.png"
-                  alt="Research Analysis"
+                  alt="Research Analysis figma screenshot"
                 >
               </picture>
               <div>
@@ -245,7 +250,7 @@
             <div>
               <h3>User Personas</h3>
               <h4>HMW: Design for users who are not tech savvy?</h4>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec02_user_persona1_ellie_whitev1@1x.png
@@ -257,11 +262,12 @@
                   alt="User persona #1 Ellie"
                 >
               </picture>
+              <br>
               <h4>
                 HMW: Provide tailored support for various types of loss, like
                 pet loss?
               </h4>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec02_user_persona2_natalie_whitev1@1x.png
@@ -284,7 +290,7 @@
               <h2 id="03-Ideate">03 Ideate</h2>
               <p>Generate a range of creative ideas.</p>
               <h3>Initial Site Map</h3>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_initial_site_map@1x.png
@@ -298,7 +304,7 @@
               </picture>
               <div>
                 <h3>Card Sorting</h3>
-                <picture>
+                <picture class="expand-image">
                   <source
                     srcset="
                       ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_workshop_whitev1@1x.png
@@ -310,7 +316,7 @@
                     alt="Card Sort Workshop"
                   >
                 </picture>
-                <picture>
+                <picture class="expand-image">
                   <source
                     srcset="
                       ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_participants_data_whitev1@1x.png
@@ -322,7 +328,7 @@
                     alt="Card Sort Overview of Participants"
                   >
                 </picture>
-                <picture>
+                <picture class="expand-image">
                   <source
                     srcset="
                       ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_similarity_matrix_whitev1@1x.png
@@ -334,7 +340,7 @@
                     alt="Card Sort Similarity Matrix"
                   >
                 </picture>
-                <picture>
+                <picture class="expand-image">
                   <source
                     srcset="
                       ./img/soulace_project_images/soulace_project_images_1x/soulace_sec03_card_sort_participant-centric_analysis_whitev1@1x.png
@@ -343,7 +349,7 @@
                   >
                   <img
                     src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec03_card_sort_participant-centric_analysis_whitev1@2x.png"
-                    alt="Card Sort Participant-centric Analysis"
+                    alt="Card Sort Participant-Centric Analysis"
                   >
                 </picture>
                 <div>
@@ -405,7 +411,7 @@
             </ol>
             <div>
               <h3>Low-Fidelity Wireframes</h3>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_low-fidelity_wireframes_whitev1@1x.png
@@ -414,11 +420,11 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_low-fidelity_wireframes_whitev1@2x.png"
-                  alt="low fidelity wireframes"
+                  alt="Low fidelity wireframes"
                 >
               </picture>
               <h3>Mid-Fidelity Wireframes</h3>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_mid-fidelity_wireframes_whitev1@1x.png
@@ -431,7 +437,7 @@
                 >
               </picture>
               <h3>Hi-Fidelity Wireframes</h3>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_high_fidelity_wireframes_welcome_screens_whitev1@1x.png
@@ -440,10 +446,10 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_high_fidelity_wireframes_welcome_screens_whitev1@2x.png"
-                  alt="high fidelity welcome screens"
+                  alt="High fidelity welcome screens"
                 >
               </picture>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_high-fidelity_wireframes_search_resources_screens_whitev1@1x.png
@@ -452,10 +458,10 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_high-fidelity_wireframes_search_resources_screens_whitev1@2x.png"
-                  alt="high fidelity search and resources screens"
+                  alt="High fidelity search and resources screens"
                 >
               </picture>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec04_high-fidelity_wireframes_homescreen_whitev1@1x.png
@@ -464,7 +470,7 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec04_high-fidelity_wireframes_homescreen_whitev1@2x.png"
-                  alt="high fidelity homescreen"
+                  alt="High fidelity homescreen"
                 >
               </picture>
             </div>
@@ -519,7 +525,7 @@
             <div>
               <!--usability test results-->
               <h3>Usability Test Results</h3>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_usability_test_results_rainbow_spreadsheet@1x.png
@@ -528,7 +534,7 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_usability_test_results_rainbow_spreadsheet@2x.png"
-                  alt="rainbow spreadsheet"
+                  alt="Rainbow spreadsheet"
                 >
               </picture>
               <div>
@@ -538,7 +544,7 @@
                 >
               </div>
               <h3>Affinity Mapping</h3>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_usability_testing_affinity_mapping@1x.png
@@ -547,7 +553,7 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_usability_testing_affinity_mapping@2x.png"
-                  alt="affinity mapping"
+                  alt="Affinity mapping figma file screenshot"
                 >
               </picture>
               <div>
@@ -583,7 +589,7 @@
                   visually and physically.
                 </li>
               </ul>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_test_report_issue1_org_rev_designs_whitev1@1x.png
@@ -592,7 +598,7 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_test_report_issue1_org_rev_designs_whitev1@2x.png"
-                  alt="issue #1 org and rev designs"
+                  alt="Issue #1 original and revised designs"
                 >
               </picture>
               <h4>Issue #2: Layout and Organization (Medium)</h4>
@@ -611,7 +617,7 @@
                   visibility and hierarchy.
                 </li>
               </ul>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_test_report_issue2_org_rev_designs_whitev1@1x.png
@@ -620,7 +626,7 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_test_report_issue2_org_rev_designs_whitev1@2x.png"
-                  alt="issue #2 org and rev designs"
+                  alt="Issue #2 original and revised designs"
                 >
               </picture>
               <h4>Issue #3: Featured Collections section consistency (High)</h4>
@@ -639,7 +645,7 @@
                   is actually identical.
                 </li>
               </ul>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec05_test_report_issue3_org_rev_designs_whitev1@1x.png
@@ -648,7 +654,7 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec05_test_report_issue3_org_rev_designs_whitev1@2x.png"
-                  alt="issue #3 org and rev designs"
+                  alt="issue #3 original and revised designs"
                 >
               </picture>
               <h4>Issue #4: Prototype Functionality (High)</h4>
@@ -691,7 +697,7 @@
             </h4>
             <div>
               <h3>Final Designs</h3>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_welcome_screens_whitev1@1x.png
@@ -700,10 +706,10 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_welcome_screens_whitev1@2x.png"
-                  alt="final designs welcome screens"
+                  alt="Final designs welcome screens"
                 >
               </picture>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_create_account_homescreen_whitev1@1x.png
@@ -712,10 +718,10 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_create_account_homescreen_whitev1@2x.png"
-                  alt="final designs create account and homescreen"
+                  alt="Final designs create account and homescreen"
                 >
               </picture>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_search_screen_whitev1@1x.png
@@ -724,10 +730,10 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_search_screen_whitev1@2x.png"
-                  alt="final designs search and map screens"
+                  alt="Final designs search and map screens"
                 >
               </picture>
-              <picture>
+              <picture class="expand-image">
                 <source
                   srcset="
                     ./img/soulace_project_images/soulace_project_images_1x/soulace_sec06_final_designs_resources_support_screens_whitev1@1x.png
@@ -736,7 +742,7 @@
                 >
                 <img
                   src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec06_final_designs_resources_support_screens_whitev1@2x.png"
-                  alt="final designs resources and support screen"
+                  alt="Final designs resources and support screen"
                 >
               </picture>
             </div>
@@ -747,7 +753,7 @@
               How well a design achieves its purpose, resonates emotionally, and
               influences behavior or decision-making
             </p>
-            <picture>
+            <picture class="expand-image">
               <source
                 srcset="
                   ./img/soulace_project_images/soulace_project_images_1x/soulace_sec07_impact_quotes_whitev1@1x.png
@@ -756,7 +762,7 @@
               >
               <img
                 src="./img/soulace_project_images/soulace_project_images_2x/soulace_sec07_impact_quotes_whitev1@2x.png"
-                alt="impact feedback"
+                alt="Impact feedback"
               >
             </picture>
             <h3>Conclusion</h3>
@@ -792,6 +798,7 @@
           </div>
         </div>
       </div>
+    </div>
     </main>
     <button id="backToTop">↑</button>
     <!--For the footer-->
@@ -800,7 +807,6 @@
         <h2>Good design is felt, not just seen. Let's create!</h2>
         <p>
           Have an idea? I'd love to hear it!
-          <a href="tel:+1234567891">Call me</a> or
           <a href="https://calendly.com/janedoestudent94/30min"
             >Schedule a meeting</a
           >
@@ -847,6 +853,14 @@
         <p>Copyright Abegail Taitano 2025</p>
       </div>
     </footer>
+      <!--EXPANDED IMAGE MODAL-->
+      <div id="imageModal" class="modal" style="display: none;">
+        <span class="close-btn"><i class="fa-solid fa-circle-xmark"></i></span>
+        <div class="modal-content-wrapper">
+        <img class="modal-content" id="modalImg" src="./img/" alt="expanded image">
+        <div id="modalAltText" class="modal-alt-text"></div>
+        </div>
+        </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
   </body>

@@ -63,12 +63,17 @@ padding-left: 5px;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: #d6ded8;
   padding: 5px 0 4px;
   position: fixed;
   width: 100%;
   box-shadow: 0px 6px 10px 0px rgba(169, 170, 171, 0.5);
+  z-index: 1000;
 }
 
 body {
@@ -133,7 +138,7 @@ img {
 
 /* -----A TAGS-----*/
 a {
-  color: #8cb0c6;
+  color: #2548a7;
   text-decoration: none; /* No underlining */
 }
 
@@ -329,7 +334,7 @@ nav > ul > li > a:active {
   color: #101010;
 }
 
-/* hamburger menu */
+/*-----HAMBURGER MENU-----*/
 .navtoggle.responsive nav {
   padding: 5px 0 0;
 }
@@ -362,19 +367,91 @@ nav > ul > li > a:active {
   padding-right: 0;
 }
 
+/*-----HERO SECTION-----*/
 #hero {
-  background-color: #f3e9e1;
-  text-align: center; /*light grayish purple*/
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-#hero h1 {
-  text-align: center; /* Centers text */
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 0 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /*--ALLOWS ABSOLUTE POSITIONING---*/
+  background-image: radial-gradient(#bbb 1px, transparent 1px);
+  background-size: 20px 20px; /*---ADJUST THE DOTS---*/
 }
 
-#hero span {
-  display: block;
+/*------WAVING ANIMATION-----*/
+.wave img {
+  width: 40px; /* Adjust size */
+  height: auto;
+  display: inline-block;
+  animation: wave-hand 2s ease-in-out infinite;
+  transform-origin: 70% 70%; /* natural pivot */
+}
+
+/*-----SMOOTHER WAVING ANIMATION-----*/
+@keyframes wave-hand {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-20deg);
+  }
+}
+
+/*-----CONTAINER KEEP TEXT CENTERED-----*/
+.hero-container {
+  max-width: 90%;
+  padding: 20px;
+  width: 1000px;
+}
+
+#hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+#hero p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-bottom: 20px;
+}
+
+/*-----SCROLL DOWN BUTTON-----*/
+.scroll-down {
+  bottom: 10px;
+  left: 45%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+  color: #767575;
+  margin-top: 10px;
+  /* z-index: 10; */
+}
+
+.scroll-down img {
+  max-width: 60px;
+  opacity: 75%;
+}
+
+/*-----ARROW BOUNCE ANIMATION-----*/
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+#work h2 {
+  padding-top: 50px;
 }
 
 #work .row:after {
@@ -384,6 +461,39 @@ nav > ul > li > a:active {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
+
+/*----OLD VERSION OF HERO--------*/
+/* #hero {
+  /* background-color: #f3e9e1; 
+  /* background-color: #f3f3f3; 
+  background-color: #fafafa;
+  text-align: center; /*light grayish purple*
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+#hero h1 {
+  text-align: center; /* Centers text 
+  height: 100vh;
+}
+
+#hero p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#hero span {
+  display: block;
+}
+
+.hero-container {
+  height: 100vh;
+} */
 
 /* -----ABOUT PAGE-------*/
 /* #about {
@@ -459,12 +569,12 @@ nav > ul > li > a:active {
 }
 
 #contact {
-  background-color: #f3e9e1;
+  background-color: #f4f4f4;
   padding: 16px 0;
   text-align: center;
 }
 
-/* Floating Table of contents (Collapsed State) */
+/*-----FLOATING TABLE OF CONTENTS----------*/
 #floating-toc {
   position: fixed;
   top: 50%;
@@ -490,10 +600,10 @@ nav > ul > li > a:active {
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
 }
 
-/* Expanded Table of contents */
+/*-----EXPANDED TABLE OF CONTENTS-----*/
 .toc-container {
   position: absolute;
-  top:50%;
+  top: 50%;
   right: 0;
   transform: translateY(-50%) scale(0);
   background: rgba(0, 0, 0, 0.9);
@@ -506,13 +616,13 @@ nav > ul > li > a:active {
   display: none;
 }
 
-/* Show Expanded Table of contents */
+/*-----SHOW EXPANDED TABLE OF CONTENTS-----*/
 .toc-container.active {
   transform: translateY(-50%) scale(1);
   display: block;
 }
 
-/* Close Button */
+/*------CLOSE BUTTON------*/
 #close-toc {
   background: none;
   color: white;
@@ -528,7 +638,7 @@ nav > ul > li > a:active {
   transform: scale(0.8);
 }
 
-/* List Styles */
+/*-----LIST STYLES-----*/
 .toc-list {
   list-style: none;
   padding: 10px 0;
@@ -550,6 +660,99 @@ nav > ul > li > a:active {
 
 .toc-list a:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+/*--------EXPAND IMAGE MODAL-------*/
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.modal-content {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 75vh;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+/* .modal-content {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 90vh;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+} */
+
+.modal-content:hover {
+  transform: scale(1.05);
+}
+
+.modal-alt-text {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.close-btn {
+  position: fixed; /* Keeps it in place */
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 10000; /* Ensures it's always on top */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+/* .close-btn {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+} */
+
+.close-btn:hover {
+  color: #d6ded8;
+  transform: scale(1.2) rotate(5deg);
+}
+
+.close-btn:active {
+  transform: scale(0.9);
 }
 
 /* POCKETFUL PAGE */
@@ -582,7 +785,6 @@ nav > ul > li > a:active {
   align-items: center;
   padding-top: 20px;
   display: block;
-
 }
 
 /* FOOTER SOCIALS */
@@ -599,6 +801,49 @@ footer {
 
 /* only keep media queries at the end of other styling */
 
+@media only screen and (max-width: 639px) {
+  #hero {
+    margin-top: 60px; /* Adjust to fit below header */
+    padding: 40px 20px;
+    min-height: 85vh; /* Ensures it fills most of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Allows absolute positioning inside */
+  }
+
+  .hero-container {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  #hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  #hero p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  /*-----FIXED SCROLL DOWN-----*/
+  .scroll-down {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block; /* makes sure it's visible */
+    z-index: 10; /* make sure its above other elements */
+  }
+
+  .scroll-down img {
+    max-width: 40px; /* Adjust size */
+    opacity: 0.8; /* Make sure it's visible */
+  }
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -608,7 +853,6 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
   nav {
     width: auto;
     float: right;
@@ -641,6 +885,14 @@ Medium devices (640px and larger)
   }
 }
 
+/*-----RESPONSIVE EXPAND IMAGE MODAL-----*/
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 95%;
+    max-height: 80%;
+  }
+}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -658,7 +910,6 @@ Large devices (1024px or larger)
   .col-lg-7 {
     width: 44%;
   }
-
 }
 
 /* ==============================

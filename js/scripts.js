@@ -9,6 +9,18 @@ function menuToggle() {
   }
 }
 
+//SCROLL DOWN TO  WORK SECTION//
+function scrollToContent() {
+  const section = document.querySelector("#work");
+  const headerHeight = document.querySelector("header").offsetHeight;
+  const offsetTop = section.offsetTop - headerHeight;
+
+  window.scrollTo({
+    top: offsetTop,
+    behavior: "smooth",
+  });
+}
+
 //TABLE OF CONTENTS MENU//
 $(document).ready(function () {
   // Open the table of contents when the small button is clicked
@@ -57,3 +69,35 @@ $(window).scroll(function () {
 backToTopButton.on("click", function () {
   $("html, body").animate({ scrollTop: 0 }, 600, "swing");
 });
+
+// EXPAND IMAGE FUNCTIONALITY
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close-btn");
+const pictures = document.querySelectorAll(".expand-image");
+
+pictures.forEach((picture) => {
+  picture.addEventListener("click", function () {
+    const img = picture.querySelector("img");
+    const altText = img.alt;
+    
+    if (img) {
+      modal.style.display = "flex";  
+      modalImg.src = img.src;      
+      document.getElementById("modalAltText").textContent = altText;  
+    }
+  });
+});
+
+// CLOSE BUTTON TO CLOSE OUT MODAL
+closeBtn.addEventListener("click", function () {
+  modal.style.display = "none"; 
+});
+
+// CLOSE MODAL WHEN CLICKING OUTSIDE
+modal.addEventListener("click", function (e) {
+  if (e.target !== modalImg && e.target !== closeBtn) {
+    modal.style.display = "none"; 
+  }
+});
+
